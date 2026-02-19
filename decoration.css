@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+}
+a{
+    border: 2px solid rgba(214, 72, 183, 0.737);
+    text-decoration:none;
+    color: rgba(253, 85, 231, 0.779);
+    padding: 15px 40px;
+}
+a:hover{
+    background-color: rgb(31, 200, 218);
+    color: black;
+    border: 2px solid rgba(0, 204, 255, 0.322);
+    box-shadow: 5px 5px 15px rgba(0, 204, 255, 0.322);
+    transition: 2s; /*permet de faire une transition fluide entre les états normal et hover*/
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle1{
+    background-color: rgb(75, 190, 239);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px;
+    animation: animation1 2s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+
+
+}
+    
+.circle2{
+    background-color: rgb(239, 75, 206);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px;
+    animation: animation2 2s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+
+
+}
+footer p{
+    color: rgb(245, 83, 197);
+    text-align: center;
+    margin-top: -100px;
+}
+@keyframes animation1 {
+    from{
+        background-color: rgb(75, 190, 239);
+        transform: translateY(200px);
+    }
+    to{
+        background-color: rgb(239, 75, 206);
+        transform: translateY(-150px);
+    }
+}
+@keyframes animation2 {
+    from{
+        background-color: rgb(239, 75, 206);
+        transform: translateY(-150px);
+    }
+    to{
+        background-color: rgb(75, 190, 239);
+        transform: translateY(200px);
+    }
+}
+    
