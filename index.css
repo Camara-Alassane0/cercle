@@ -12,7 +12,7 @@ a:hover{
     color: black;
     border: 2px solid rgba(0, 204, 255, 0.322);
     box-shadow: 5px 5px 15px rgba(0, 204, 255, 0.322);
-    transition: 2s; /*permet de faire une transition fluide entre les états normal et le moment ou tu vas passe le curseur*/
+    transition: 2s; /*permet de faire une transition entre les états normal et le moment ou tu vas passe le curseur*/
 }
 
 main{
